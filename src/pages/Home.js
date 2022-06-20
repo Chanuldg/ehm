@@ -1,12 +1,22 @@
 import React from 'react'
 import SearchBarCmp from '../components/SearchBar/SearchBarCmp'
-import HotelList from '../components/HotelList/HotelList'
+import HotelDetailCmp from '../components/HotelDetail/HotelDetailCmp'
 
 function Home() {
     return (
         <div>
             <SearchBarCmp/>
-            <HotelList/>
+                <div className="row">
+                    <div className="col-4">
+                    <HotelDetailCmp/>
+                    </div>
+                    <div className="col-4">
+                    <HotelDetailCmp/>
+                    </div>
+                    <div className="col-4">
+                    <HotelDetailCmp/>
+                    </div>
+                </div>
         </div>
 
     )
